@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background: #459a56;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header {
+  position: relative;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.add-icon {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+.search-post {
+  outline: none;
+  background: none;
+  border: 1px solid #459a56;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  width: calc(100% - 240px);
+  color: #fff;
+}
+
+#dropDown {
+  background: #459a56;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 120px;
+  border: 1px solid #fff;
+}
+
+.PostWrapper {
+  background: #1a1a40;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+  max-width: 800px;
+}
+
+.Post {
+  position: relative;
+  background: #459a56;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.post_body {
+  background: #35643e;
+  margin: 10px auto 40px;
+  border-radius: 5px;
+}
+
+.more_less {
+  cursor: pointer;
+  font-size: larger;
+}
+
+.delete-icon-posts,
+.edit-icon-posts {
+  position: absolute;
+  display: inline;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.edit-icon-posts {
+  right: 2.5rem;
+}
+
+.delete-icon-comments {
+  cursor: pointer;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.delete-icon-posts:hover,
+.delete-icon-comments:hover {
+  color: red;
+}
+
+.Comment {
+  background: #1a1a40;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+h4 {
+  margin-top: 50px;
+}
+
+.CommentForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.CommentForm input,
+.CommentForm .comment-btn {
+  width: 24%;
+  height: 30px;
+  background: #1a1a40;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+}
+
+.CommentForm .comment-btn {
+  cursor: pointer;
+}
+
+.PostFormBorder {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.PostForm,
+.EditPostForm {
+  background-color: #fefefe;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.PostForm p,
+.EditPostForm p {
+  font-size: larger;
+}
+
+.PostForm input,
+.EditPostForm input {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #888;
+}
+
+.PostForm-btns {
+  border-radius: 5px;
+}
+
+.closeAddPost-btn,
+.addPost-btn {
+  width: 50%;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+
+.closeAddPost-btn {
+  background-color: #dc3545;
+}
+
+.addPost-btn {
+  background-color: #28a745;
+}
+
+.closeAddPost-btn:hover,
+.addPost-btn:hover,
+.EditPostForm button:hover {
+  opacity: 0.7;
+}
+
+.title_body {
+  width: 20%;
+  display: inline-block;
+}
+
+.EditPostForm {
+  width: 100%;
+  max-width: none;
+  margin: auto auto 1rem;
+}
+
+.EditPostForm input {
+  width: 80%;
+}
+
+.EditPostForm button {
+  width: 100%;
+  color: #fff;
+  background-color: #dc3545;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+}
